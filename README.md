@@ -18,7 +18,13 @@ source venv-advent-of-code/bin/activate  # On Unix/macOS
 .\venv-advent-of-code\Scripts\activate  # On Windows
 ```
 
-3. Run solutions:
+3. Get the input files and problem statements:
+   - Visit [Advent of Code](https://adventofcode.com/)
+   - For each day:
+     - Create `dayXX/input.txt` with your puzzle input
+     - Create `dayXX/part1-problem.txt` and `dayXX/part2-problem.txt` with the problem descriptions
+
+4. Run solutions:
 ```
 python dayXX/part1.py < dayXX/input.txt  # For part 1
 python dayXX/part2.py < dayXX/input.txt  # For part 2
@@ -43,12 +49,14 @@ Legend:
 Each day's challenge is organized in its own directory:
 ```
 dayXX/
-├── input.txt         # Challenge input
-├── part1-problem.txt # Problem description for part 1
-├── part2-problem.txt # Problem description for part 2
+├── input.txt         # Challenge input (not included - get from adventofcode.com)
+├── part1-problem.txt # Problem description for part 1 (not included - get from adventofcode.com)
+├── part2-problem.txt # Problem description for part 2 (not included - get from adventofcode.com)
 ├── part1.py         # Solution for part 1
 └── part2.py         # Solution for part 2
 ```
+
+Note: The `input.txt` and problem statement files are not included in this repository. You'll need to get these from the [Advent of Code website](https://adventofcode.com/) using your own account, as per the Advent of Code's terms of use.
 
 ## About the Project
 
