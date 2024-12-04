@@ -162,3 +162,6 @@ cython_debug/
 #.idea/
 
 .DS_Store
+day*/input.txt
+day*/part1-problem.txt
+day*/part2-problem.txt
