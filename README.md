@@ -38,6 +38,7 @@ python dayXX/part2.py < dayXX/input.txt  # For part 2
 | 02  | gemini-exp-1121 | ✅     | ✅     | 1/1              | Zero-shot   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221RLXAgFWunvpYsyfIxwo-AUN4a9kjhTRl%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     |       |
 | 03  | gemini-exp-1121 | ✅     | ✅     | 1/2              | Zero-shot   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221f0KmVrz838uuehNbgh209gEqR726Utg5%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     | first attempt for part 2 led to a `ValueError` due to improper handling of regex groups     |
 | 04  | gemini-exp-1121 | ✅     | ❌     | 1/3              | Zero-shot, CoT   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%2219u86k9DX47Z7S253S-Z0FW_W1tekHthB%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     | did not solve part 2     |
+| 05  | gemini-exp-1121 | ✅     | ✅     | 2/1              | Zero-shot   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221XV71bCF0inECZ7W9AacPwKf0a0tEMPzt%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     |      |
 
 Legend:
 - ✅ Solved
