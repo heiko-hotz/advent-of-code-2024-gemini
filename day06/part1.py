@@ -1,44 +1,41 @@
 def solve():
-    grid = [list(line.strip()) for line in sys.stdin]
-    rows, cols = len(grid), len(grid[0])
+    grid = []
+    start_row, start_col = -1, -1
+    with open("day06/input.txt", "r") as f:
+        for row_index, line in enumerate(f):
+            row = list(line.strip())
+            if '^' in row:
+                start_row, start_col = row_index, row.index('^')
+            grid.append(row)
 
-    # Find starting position and direction
-    for r in range(rows):
-        for c in range(cols):
-            if grid[r][c] in ['^', '>', 'v', '<']:
-                start_r, start_c = r, c
-                start_dir = grid[r][c]
-                grid[r][c] = '.'
-                break
-        else:
-            continue
-        break
-
-    directions = {'^': (-1, 0), '>': (0, 1), 'v': (1, 0), '<': (0, -1)}
-    right_turns = {'^': '>', '>': 'v', 'v': '<', '<': '^'}
-
+    rows = len(grid)
+    cols = len(grid[0])
     visited = set()
-    r, c = start_r, start_c
-    curr_dir = start_dir
+    current_row, current_col = start_row, start_col
+    direction = 0  # 0: up, 1: right, 2: down, 3: left
 
-    while 0 <= r < rows and 0 <= c < cols:
-        visited.add((r, c))
+    while 0 <= current_row < rows and 0 <= current_col < cols:
+        visited.add((current_row, current_col))
 
-        dr, dc = directions[curr_dir]
-        next_r, next_c = r + dr, c + dc
+        next_row, next_col = current_row, current_col
+        if direction == 0:
+            next_row -= 1
+        elif direction == 1:
+            next_col += 1
+        elif direction == 2:
+            next_row += 1
+        elif direction == 3:
+            next_col -= 1
 
-        # Only turn if the next position is within bounds and is an obstacle
-        if 0 <= next_r < rows and 0 <= next_c < cols and grid[next_r][next_c] == '#':
-            curr_dir = right_turns[curr_dir]
-            dr, dc = directions[curr_dir]
-            next_r, next_c = r + dr, c + dc
-            # Check again after turning, if still blocked or out of bounds, then stop
-            if not (0 <= next_r < rows and 0 <= next_c < cols) or (0 <= next_r < rows and 0 <= next_c < cols and grid[next_r][next_c] == '#'):
-                break
-        
-        r, c = next_r, next_c
+        # Check if the next position is within bounds and not an obstacle
+        if 0 <= next_row < rows and 0 <= next_col < cols and grid[next_row][next_col] != '#':
+            current_row, current_col = next_row, next_col
+        elif not (0 <= next_row < rows and 0 <= next_col < cols):
+            # Exit the loop if the next position is out of bounds
+            break;
+        else:
+            direction = (direction + 1) % 4
 
     print(len(visited))
 
-import sys
 solve()
