@@ -44,7 +44,7 @@ python dayXX/part2.py < dayXX/input.txt  # For part 2
 | 08  | gemini-exp-1206 | ✅    | ✅     | 1/1              | CoT   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221f4gG-LJf3TuRjpVRMvnfIPZZc-S__ToN%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     |      |
 | 09  | gemini-exp-1206 | ❌    | `-`     | 3/1              | CoT   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%2212_LaEzYEj9S_BGTbINw3Rtkw-0xWhMAJ%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     |      |
 | 10  | gemini-exp-1206 | ✅    | ✅     | 1/1              | CoT   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221hCDQ3n-za6_L64R9sTD-p_uQvajaj1d7%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     |      |
-| 11  | gemini-exp-1206 | ✅    | ✅     | 1/1              | CoT   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221SQKUXWTJu_MWTXXMD2DQQM-_9tRXKpjg%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)  1/2   | After hinting that the naive solution will take too long, Gemini found a more efficient solution     |
+| 11  | gemini-exp-1206 | ✅    | ✅     | 1/2              | CoT   | [Chat](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221SQKUXWTJu_MWTXXMD2DQQM-_9tRXKpjg%22%5D,%22action%22:%22open%22,%22userId%22:%22105677632504908789218%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)     | After hinting that the naive solution will take too long, Gemini found a more efficient solution     |
 
 Legend:
 - ✅ Solved
